@@ -1558,7 +1558,7 @@ public class Hive {
 						throw new HiveException(e);
 					}
 					validPartitions.add(s.getPath().getParent());
-					LOG.info("leaf path " + s.getPath());
+					LOG.debug("leaf path " + s.getPath());
 				}
 			}
 
@@ -2529,7 +2529,7 @@ public class Hive {
 			return false;
 		}
 
-		LOG.info("The source path is " + fullF1 + " and the destination path is " + fullF2);
+		LOG.debug("The source path is " + fullF1 + " and the destination path is " + fullF2);
 		return fullF1.startsWith(fullF2);
 	}
 
